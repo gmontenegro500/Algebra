@@ -1,0 +1,16 @@
+footer{
+  margin-top: 40px;
+  padding: 50px 0;
+  background-color: #5cb85c;
+}
+.nav-footer li{
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+.footer-icons {
+  text-align: center;
+  margin-top: 40px;
+}
+.footer-icons i{
+  padding-right: 10px;
+}

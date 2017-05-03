@@ -1,0 +1,16 @@
+.logo{
+  padding-top: 2px;
+}
+.logo img{
+  height: 45px;
+}
+.navbar-default {
+  height: 49px;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  background-color: #6aaf6a;
+  color: #fff;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: transparent;
+}
