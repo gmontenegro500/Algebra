@@ -10,13 +10,17 @@ import { NavigationBarComponent } from './components/navigation-bar/navigation-b
 import { HomeComponent } from './components/home/home.component';
 import { routing } from './app.routing';
 import { FooterComponent } from './components/footer/footer.component';
+import { SignupComponent } from './components/signup/signup.component';
+import { SigninComponent } from './components/signin/signin.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationBarComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    SignupComponent,
+    SigninComponent
   ],
   imports: [
     BrowserModule,

@@ -10,8 +10,8 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right bg-color">
-              <li class="page-scroll active">
-                  <a href="#">Home</a>
+              <li class="page-scroll" routerLinkActive="active">
+                  <a routerLink="/home">Home</a>
               </li>
               <li class="btn-group" dropdown>
                 <a href="#" class="dropdown-toggle" dropdownToggle>Courses <span class="caret"></span></a>
@@ -23,11 +23,11 @@
               <li class="page-scroll">
                   <a href="#">Blog</a>
               </li>
-              <li class="page-scroll">
-                  <a href="sign-in.html">Sign In</a>
+              <li class="page-scroll" routerLinkActive = "active">
+                  <a routerLink = "/signin">Sign In</a>
               </li>
-              <li class="page-scroll">
-                  <a href="sign-up.html">Sign Up</a>
+              <li class="page-scroll" routerLinkActive="active">
+                  <a routerLink = "/signup">Sign Up</a>
               </li>
               <!--<li class="page-scroll">
                   <a href="profile.html">Profile</a>
