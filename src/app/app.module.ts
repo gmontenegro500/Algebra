@@ -12,6 +12,7 @@ import { routing } from './app.routing';
 import { FooterComponent } from './components/footer/footer.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { SigninComponent } from './components/signin/signin.component';
+import { UserService } from './services/user.service';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,7 @@ import { SigninComponent } from './components/signin/signin.component';
     BsDropdownModule.forRoot(),
     routing
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
