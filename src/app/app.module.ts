@@ -13,6 +13,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { SigninComponent } from './components/signin/signin.component';
 import { UserService } from './services/user.service';
+import { AuthService } from './services/auth.service';
+import { AuthGuard } from './app.guard';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,7 @@ import { UserService } from './services/user.service';
     BsDropdownModule.forRoot(),
     routing
   ],
-  providers: [UserService],
+  providers: [UserService, AuthService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
