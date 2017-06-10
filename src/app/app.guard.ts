@@ -14,13 +14,12 @@ export class AuthGuard implements CanActivate {
 
     canActivate (next: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
 
-        if (this.auth.isAuthenticated()) {
-            console.log('AUTH GUARD PASSED');
-            return true;
-        } else {
-            console.log('BLOCKED BY AUTH GUARD');
-            this.router.navigate(['/']);
-            return false;
-        }
+        return this.auth.isAuthenticated().map(res => {
+            if (!res.status) {
+                console.log('BLOCKED BY AUTH GUARD');
+                this.router.navigate(['/']);
+            }
+            return res.status;
+        });
     }
 }

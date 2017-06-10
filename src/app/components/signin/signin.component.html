@@ -6,22 +6,22 @@
             <div class="panel-heading">
               <h3 class="panel-title">Welcome back!</h3>
             </div>
-            <div class="panel-body">
+            <form (submit) = "login($event)" class="panel-body">
               <div class="row">
                 <div class="col-md-12">
                   <label>Username</label>
-                  <input>
+                  <input name="username" [(ngModel)]="user.username">
                 </div>
               </div>
               <div class="row row-space">
                 <div class="col-md-12">
                   <label>Password</label>
-                  <input>
+                  <input name="password" [(ngModel)]="user.password" type="password">
                 </div>
               </div>
               <hr/>
-              <button type="button" class="btn btn-block btn-lg btn-success">Sign in</button>
-            </div>
+              <button type="submit" class="btn btn-block btn-lg btn-success">Sign in</button>
+            </form>
           </div>
         </div>
         <div class="row">
